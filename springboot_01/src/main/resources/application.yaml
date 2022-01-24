@@ -1,0 +1,30 @@
+server:
+  port: 82
+
+
+name: xrz
+age: 18
+
+user:
+  name: xie
+  age: 19
+
+likes:
+  - run
+  - program
+
+users:
+  -
+    name: rong
+    age: 20
+  -
+    name: zhen
+    age: 21
+
+hobbies: [swim, ball]
+
+lovers: [{name: xhx,age: 18}, {name: bql,age: 18}]
+
+baseDir: c:\base
+tempDir: ${baseDir}\temp
+locDir: "${baseDir}\temp\t1\t2\t3"
