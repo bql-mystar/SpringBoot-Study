@@ -1,0 +1,17 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/db1?serverTimezone=UTC
+#    username: root
+#    password: root
+#    # 使用以下方法可以将druid整合进springboot，是通用性指定数据源类型的方法，但这不是整合的做法
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+# 推荐使用以下方法整合druid
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=UTC
+      username: root
+      password: root

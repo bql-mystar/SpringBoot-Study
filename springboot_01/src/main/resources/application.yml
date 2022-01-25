@@ -1,2 +1,13 @@
 server:
   port: 81
+
+
+# 创建类，用于封装下面的数据
+# 由Spring帮我们去加载数据到对象中，一定要告诉Spring加载这组信息
+# 使用的时候从Spring中直接获取信息使用
+datasource:
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/db1?serverTimezone=UTC
+  username: root
+  password: root
+  maxActive: 20
