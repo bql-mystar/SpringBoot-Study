@@ -55,3 +55,25 @@ starter:
         使用Environment对象封装全部配置信息
         使用@Autowired自动装配数据到Environment对象中
 
+        1、使用@ConfigurationProperties注解绑定配置信息到封装类中
+        2、封装类需要定义为Spring管理的bean，否则无法进行注入
+
+整合第三方技术：
+    SpringBoot整合Junit：
+        1、导入测试对应的starter
+        2、测试类使用@SpringBootTest修饰
+        3、使用自动装配的形式添加要测试的对象
+            注意：如果测试类在SpringBoot启动类的包或子包中，可以忽略启动类的配置，也就是省略classes的设定(如：@SpringBootTest(classes = Springboot01ApplicationTests.class))
+
+        1、测试类如果存在于引导类所在包或者子包中无需指定引导类
+        2、测试类如果不存在于引导类所在的包或子包中需要通过classes属性指定引导类
+
+    整合任意第三方技术通用方式：
+        导入对应的starter
+        配置对应的设置或采用默认配置
+
+lombok使用：
+    lombok是一个Java类库，提供一组注释，简化POJO实体类开发
+    导入lombok无需指定版本，由SpringBoot提供版本
+    常用注解：
+        @Data：为当前实体类在编译期设置对应的get/set方法，toString方法，hashCode方法，equals方法等

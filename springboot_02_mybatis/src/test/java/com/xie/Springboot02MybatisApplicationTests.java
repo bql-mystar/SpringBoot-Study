@@ -1,19 +1,19 @@
-package com.xia;
+package com.xie;
 
-import com.xia.dao.BookDao;
+import com.xie.dao.AccountDao;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = Springboot01ApplicationTests.class)
-class Springboot01ApplicationTests {
+@SpringBootTest
+class Springboot02MybatisApplicationTests {
 
     @Autowired
-    private BookDao bookDao;
+    private AccountDao accountDao;
 
     @Test
     void contextLoads() {
-        bookDao.save();
+        System.out.println(accountDao.getById(3));
     }
 
 }
