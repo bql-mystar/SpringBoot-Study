@@ -77,5 +77,8 @@ lombok使用：
     导入lombok无需指定版本，由SpringBoot提供版本
     常用注解：
         @Data：为当前实体类在编译期设置对应的get/set方法，toString方法，hashCode方法，equals方法等
+<<<<<<< HEAD
 
 配置高级：
+=======
+>>>>>>> origin/master
